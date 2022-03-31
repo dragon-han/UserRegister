@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF6200EE"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="用户注册"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:text="手机号："
+        android:textColor="#5A5959"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:hint="请输入手机号："
+        android:inputType="phone"
+        android:paddingLeft="30dp"
+        android:textColorHint="#95a1aa" />
+
+    <TextView
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:paddingLeft="10dp"
+        android:text="密    码："
+        android:textColor="#5A5959"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp"
+        android:drawablePadding="50dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:textColorHint="#95a1aa" />
+
+    <ToggleButton
+        android:id="@+id/btn_pwd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/pwd_selector"
+        android:backgroundTint="#B7B8B8"
+        android:textOff=""
+        android:textOn="" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_eye"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginLeft="360dp"-->
+<!--        android:layout_marginTop="125dp"-->
+<!--        android:src="@drawable/pwd_selector" />-->
+
+
+    <RadioGroup
+        android:id="@+id/rg_Selection"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pwd"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="100dp">
+
+        <RadioButton
+            android:id="@+id/rb_boy"
+            android:text="男生"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rb_girl"
+            android:text="女生"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_readbook"
+        android:text="读书"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="40dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_playball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="250dp"
+        android:text="打球"
+        android:textSize="18dp" />
+    <CheckBox
+        android:id="@+id/cb_music"
+        android:text="听音乐"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="180dp" />
+    <CheckBox
+        android:id="@+id/cb_running"
+        android:text="跑步"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="270dp" />
+
+    <Spinner
+        android:id="@+id/sn_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:entries="@array/spingarr" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="500dp"
+        android:text="注     册"
+        android:textSize="25dp" />
+
+
+
+
+</RelativeLayout>
